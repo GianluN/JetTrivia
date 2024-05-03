@@ -1,6 +1,6 @@
-# Trivia Game con Jetpack Compose
+# JetTriviaApp
 
-`Trivia Game` è un'applicazione Android sviluppata con Jetpack Compose che offre un gioco di trivia interattivo. Le domande e le risposte, compresa quella esatta, vengono caricate da un file JSON, rendendo facile aggiornare e modificare il set di domande. Durante il gioco, gli utenti possono visualizzare il numero di risposte esatte ottenute.
+`JetTriviaApp` è un'applicazione Android sviluppata con Jetpack Compose che offre un gioco di trivia interattivo. Le domande e le risposte, compresa quella esatta, vengono caricate da un file JSON, rendendo facile aggiornare e modificare il set di domande. Durante il gioco, gli utenti possono visualizzare il numero di risposte esatte ottenute.
 
 ## Funzionalità
 
