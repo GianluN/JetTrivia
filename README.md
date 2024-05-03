@@ -35,10 +35,10 @@ Il file json contiene un array di oggetti, ciascuno rappresentante una domanda c
 ```
 
 ## Contribuire
-Sei interessato a migliorare Trivia Game? Le tue contribuzioni sono benvenute! Ecco come puoi farlo:
+Sei interessato a migliorare JetTriviaApp? Le tue contribuzioni sono benvenute! Ecco come puoi farlo:
 
-Forka il progetto.
-Crea il tuo Branch (git checkout -b feature/AmazingFeature).
-Effettua le tue modifiche e commitale (git commit -m 'Add some AmazingFeature').
-Pusha il Branch (git push origin feature/AmazingFeature).
-Apri una Pull Request.
+- Forka il progetto.
+- Crea il tuo Branch (git checkout -b feature/AmazingFeature).
+- Effettua le tue modifiche e commitale (git commit -m 'Add some AmazingFeature').
+- Pusha il Branch (git push origin feature/AmazingFeature).
+- Apri una Pull Request.
