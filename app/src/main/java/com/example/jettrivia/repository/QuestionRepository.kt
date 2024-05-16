@@ -7,13 +7,13 @@ import com.example.jettrivia.network.QuestionApi
 import javax.inject.Inject
 
 class QuestionRepository @Inject constructor(private val api: QuestionApi) {
-    private val dataOrException = DataOrException<ArrayList<QuestionItem>, Boolean, Exception>() // facciamo così per poter passare altri dati oltre all'arraylist
+    private val dataOrException = DataOrException<ArrayList<QuestionItem>, Boolean, Exception>()
 
     suspend fun getAllQuestions(): DataOrException<ArrayList<QuestionItem>, Boolean, Exception> {
         try {
-            dataOrException.loading = true // corrisponde a Boolean
-            dataOrException.data = api.getAllQuestions() // corrisponde a ArrayList<QuestionItem>
-            if (dataOrException.data.toString().isNotEmpty()) dataOrException.loading = false // abbiamo caricato qualcosa, mettiamo a false lo stato
+            dataOrException.loading = true
+            dataOrException.data = api.getAllQuestions()
+            if (dataOrException.data.toString().isNotEmpty()) dataOrException.loading = false
 
         } catch (exception: Exception) {
             dataOrException.e = exception
