@@ -53,7 +53,7 @@ import com.example.jettrivia.util.AppColors
 @Composable
 fun Questions(viewModel: QuestionsViewModel) {
     val questions =
-        viewModel.data.value.data?.toMutableList() // perchè il tipo nella classe Question è un array
+        viewModel.data.value.data?.toMutableList()
     val questionIndex = remember {
         mutableStateOf(0)
     }
@@ -79,7 +79,6 @@ fun Questions(viewModel: QuestionsViewModel) {
     Log.d("SIZE", "Questions: ${questions?.size}")
 }
 
-//@Preview
 @Composable
 fun QuestionDisplay(
     question: QuestionItem,
@@ -102,14 +101,14 @@ fun QuestionDisplay(
         {
             answerState.value = it
             correctAnswerState.value =
-                choicesState[it] == question.answer // se la scelta è = alla risposta esatta e mettiamo a true correctAnswerState
+                choicesState[it] == question.answer
         }
     }
 
     val pathEffect = androidx.compose.ui.graphics.PathEffect.dashPathEffect(
         floatArrayOf(10f, 10f),
         0f
-    ) // 10 px on 10 px off
+    )
     Surface(
         modifier = Modifier
             .fillMaxWidth()
@@ -139,7 +138,6 @@ fun QuestionDisplay(
                     lineHeight = 22.sp,
                     color = AppColors.mOffWhite
                 )
-                //choices
                 choicesState.forEachIndexed { index, answerText ->
                     Row(
                         modifier = Modifier
